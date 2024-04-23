@@ -24,7 +24,7 @@ const UserMachineRenterCard = (props) => {
     setpayloading(true);
     const token = localStorage.getItem("token");
     const activerent = await axios.post(
-      `${}/api/requests/getactiverental`,
+      `https://krishi-upaj-api.onrender.com/api/requests/getactiverental`,
       { machineid, token }
     );
 
@@ -45,7 +45,7 @@ const UserMachineRenterCard = (props) => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        `${}/api/requests/rentclose`,
+        `https://krishi-upaj-api.onrender.com/api/requests/rentclose`,
         { token, machineid, renterid, ownerid }
       );
       if (response.data.status) {
@@ -69,7 +69,7 @@ const UserMachineRenterCard = (props) => {
       setloading(true);
       try {
         const activerent = await axios.post(
-          `${}/api/requests/getactiverental`,
+          `https://krishi-upaj-api.onrender.com/api/requests/getactiverental`,
           { machineid, token }
         );
 

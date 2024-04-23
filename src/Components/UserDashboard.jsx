@@ -59,11 +59,11 @@ const UserDashboard = ({ usermachinedata, machinedata }) => {
     const fetchdata = async () => {
       try {
         const response = await axios.post(
-          `${}/api/users/isAuthenticated`,
+          `https://krishi-upaj-api.onrender.com/api/users/isAuthenticated`,
           { token }
         );
         const machines = await axios.post(
-          `${}/api/machines/getmachines`,
+          `https://krishi-upaj-api.onrender.com/api/machines/getmachines`,
           {
             token,
           }

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fc251a9d.css",
+    "main.js": "/static/js/main.50e56532.js",
+    "static/media/tractor-5.png": "/static/media/tractor-5.19c8f68fdb5a8af2de2c.png",
+    "static/media/harvester-2.png": "/static/media/harvester-2.0da9b0833b8c501266a5.png",
+    "static/media/mower.png": "/static/media/mower.614dffd6ee94da080a13.png",
+    "static/media/tractor-bg3.png": "/static/media/tractor-bg3.6eefb2d4eca977c21d7e.png",
+    "static/media/harvester-white-bg-clone.png": "/static/media/harvester-white-bg-clone.db740acd0f3e7195fff5.png",
+    "static/media/tractor-bg4.png": "/static/media/tractor-bg4.d153092c9ccd664c4a37.png",
+    "static/media/mower-bg.png": "/static/media/mower-bg.865fe6b70dafe166f43d.png",
+    "static/media/logo-no-background.png": "/static/media/logo-no-background.4c81de811bcbe3093944.png",
+    "static/media/logo-color.png": "/static/media/logo-color.cdd0d09e73020a4d4b89.png",
+    "index.html": "/index.html",
+    "main.fc251a9d.css.map": "/static/css/main.fc251a9d.css.map",
+    "main.50e56532.js.map": "/static/js/main.50e56532.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc251a9d.css",
+    "static/js/main.50e56532.js"
+  ]
+}

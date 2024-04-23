@@ -20,7 +20,7 @@ const RequestRenterList = (props) => {
     const token = localStorage.getItem('token');
     try {
       const machineid = machine._id;
-      const response = await axios.post(`${}/api/requests/requestaccept`, { token, machineid, renterid, ownerid, bidamount, tenure });
+      const response = await axios.post(`https://krishi-upaj-api.onrender.com/api/requests/requestaccept`, { token, machineid, renterid, ownerid, bidamount, tenure });
       if (response.data.status) {
         setmodal(false);
         toast.success("Machine Alloted Successfully, Refresh the Page");

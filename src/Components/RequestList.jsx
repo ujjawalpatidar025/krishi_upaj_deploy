@@ -23,12 +23,12 @@ const RequestList = () => {
 
       try {
         const machineData = await axios.post(
-          `${}/api/machines/getmachinebyid`,
+          `https://krishi-upaj-api.onrender.com/api/machines/getmachinebyid`,
           { machineid, token }
         );
         setmachine(machineData.data.data);
         const machinerequests = await axios.post(
-          `${}/api/requests/getmachinerequest`,
+          `https://krishi-upaj-api.onrender.com/api/requests/getmachinerequest`,
           { machineid, token }
         );
 

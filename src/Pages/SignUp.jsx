@@ -19,7 +19,7 @@ const SignUp = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${}/api/users/signup`,
+        `https://krishi-upaj-api.onrender.com/api/users/signup`,
         { username, password }
       );
       console.log(response);

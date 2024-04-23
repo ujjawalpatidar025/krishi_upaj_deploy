@@ -25,7 +25,7 @@ const Home = () => {
     const fetchdata = async () => {
       try {
         const response = await axios.post(
-          `${}/api/users/isAuthenticated`,
+          `https://krishi-upaj-api.onrender.com/api/users/isAuthenticated`,
           { token }
         );
 

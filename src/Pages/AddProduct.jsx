@@ -73,7 +73,7 @@ const AddProduct = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        `${}/api/machines/addMachine`,
+        `https://krishi-upaj-api.onrender.com/api/machines/addMachine`,
         formData,
       );
       setloading(false);
@@ -93,7 +93,7 @@ const AddProduct = () => {
     const fetchdata = async () => {
       try {
         const response = await axios.post(
-          `${}/api/users/isAuthenticated`,
+          `https://krishi-upaj-api.onrender.com/api/users/isAuthenticated`,
           { token }
         );
 

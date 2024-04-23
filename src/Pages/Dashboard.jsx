@@ -33,12 +33,12 @@ const Dashboard = () => {
     const fetchdata = async () => {
       try {
         const response = await axios.post(
-          `${}/api/users/isAuthenticated`,
+          `https://krishi-upaj-api.onrender.com/api/users/isAuthenticated`,
           { token }
         );
         const user = response.data.others;
         const machines = await axios.post(
-          `${}/api/machines/getmachines`,
+          `https://krishi-upaj-api.onrender.com/api/machines/getmachines`,
           {
             token,
           }
@@ -47,7 +47,7 @@ const Dashboard = () => {
         setallmachines(machines.data.machines);
 
         const usermachine = await axios.post(
-          `${}/api/machines/getusermachine`,
+          `https://krishi-upaj-api.onrender.com/api/machines/getusermachine`,
           {
             userid: user._id,
             token: token,
@@ -88,7 +88,7 @@ const Dashboard = () => {
       try {
         //console.log({token,_id,firstname,lastname,address,pincode,phonenumber,username})
         const response = await axios.post(
-          `${}/api/users/updateUser`,
+          `https://krishi-upaj-api.onrender.com/api/users/updateUser`,
           {
             token,
             _id,

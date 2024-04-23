@@ -22,7 +22,7 @@ const ActiveRentalCard = () => {
     const fetchData = async () => {
       try {
         const activerent = await axios.post(
-          `${}/api/requests/getactiverental`,
+          `https://krishi-upaj-api.onrender.com/api/requests/getactiverental`,
           { machineid, token }
         );
         setactiverentdata(activerent.data.activerentdata[0]);
@@ -30,18 +30,18 @@ const ActiveRentalCard = () => {
         const ownerid = activerent.data.activerentdata[0].owner;
 
         const rentUser = await axios.post(
-          `${}/api/users/getUser`,
+          `https://krishi-upaj-api.onrender.com/api/users/getUser`,
           { _id: renterid, token: token }
         );
         setrenter(rentUser.data.others);
         const ownerUser = await axios.post(
-          `${}/api/users/getUser`,
+          `https://krishi-upaj-api.onrender.com/api/users/getUser`,
           { _id: ownerid, token: token }
         );
         setowner(ownerUser.data.others);
 
         const machineData = await axios.post(
-          `${}/api/machines/getmachinebyid`,
+          `https://krishi-upaj-api.onrender.com/api/machines/getmachinebyid`,
           { machineid, token: token }
         );
         setmachine(machineData.data.data);

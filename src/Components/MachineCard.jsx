@@ -37,7 +37,7 @@ const MachineCard = (props) => {
 
     try {
       const response = await axios.post(
-        `${}/api/requests/rentrequest`,
+        `https://krishi-upaj-api.onrender.com/api/requests/rentrequest`,
         data
       );
       if (!response) {
